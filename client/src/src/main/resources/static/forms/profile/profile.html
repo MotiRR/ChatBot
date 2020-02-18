@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SchoolChat</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="scripts/profile.css">
+    <link rel="stylesheet" href="scripts/messanger.css">
+
+    <script src='https://unpkg.com/react@16/umd/react.development.js'></script>
+    <script src='https://unpkg.com/react-dom@16/umd/react-dom.development.js'></script>
+
+    <script src="scripts/profile.js"></script>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/videoReact.js"></script>
+    <script src="scripts/ChatBoardComponent.js"></script>
+    <script src="scripts/FriendsReact.js"></script>
+</head>
+<body onload="onFormLoad()">
+<h1>Профиль</h1>
+
+<div id="profile">
+    <div id="content">
+        <p>
+        <div width="40"><b>Фамилия</b></div>
+        <input id="input_lastName" type="text" disabled="disabled">
+        </p>
+
+        <p>
+        <div width="40"><b>Имя</b></div>
+        <input id="input_name" type="text" disabled="disabled">
+        </p>
+
+        <p>
+        <div width="40"><b>Отчество</b></div>
+        <input id="input_secondName" type="text" disabled="disabled">
+        </p>
+
+        <button id="showMusic" onclick="showMusic()">Моя музыка</button>
+        <button id="showVideo" onclick="showVideo()">Мое видео</button>
+
+        <p>
+        <div width="40"><b>Баланс</b></div>
+        <input id="input_bill" type="text" disabled="disabled">
+        </p>
+
+        <p>
+        <div width="40"><b>Телефон</b></div>
+        <input id="input_phone" type="text" disabled="disabled">
+        </p>
+
+        <p>
+        <div width="40"><b>email</b></div>
+        <input id="input_email" type="text" disabled="disabled">
+        </p>
+
+        <div id="div_friends">
+            <h3>Мои друзья</h3>
+            <div id="div_friends_list"></div>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <img id='avatar' src="/images/default_avatar.jpg" width="200" height="300" alt="avatar">
+        <br>
+        <label for="input_photo">Сменить аватар</label>
+        <br>
+        <input id="input_photo" type="file" onchange="onPhotoSelected(this);">
+        <button id="button_exit" onclick="logout()">Выйти</button>
+    </div>
+
+    <div id="board">
+        <h5>Моя доска</h5>
+        <div id="board_content"></div>
+    </div>
+
+    <dialog id="musicDialog">
+        <div>Музыка</div>
+        <div id="musicDialog_musicList"></div>
+        <button id="musicDialog_closeDialog" onclick="closeDialog('musicDialog')">Close</button>
+    </dialog>
+
+    <dialog id="videoDialog">
+        <div>Видео</div>
+        <div id="videoDialog_musicList"></div>
+        <button id="videoDialog_closeDialog" onclick="closeDialog('videoDialog')">Close</button>
+    </dialog>
+</div>
+
+</body>
+
+</html>

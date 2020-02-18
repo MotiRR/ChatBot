@@ -1,0 +1,38 @@
+#administration_component {
+    display: flex;
+}
+
+#user_component {
+    margin-bottom: 15px;
+}
+
+#show_about_form_id {
+    margin-bottom: 10px;
+}
+
+#about_component_id {
+    width: 900px;
+    border-style: solid;
+    margin-left: 50px;
+    height: 1200px;
+    background: #f00;
+}
+
+#usersDetails_component {
+    overflow: scroll;
+    width: 900px;
+    border-style: solid;
+    margin-left: 50px;
+    height: 1200px;
+}
+
+#lockuser_component {
+    display: block;
+    border-style: solid;
+}
+
+#lock_button,
+#unlock_button,
+#details_button {
+    margin-right: 5px
+}

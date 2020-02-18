@@ -1,0 +1,36 @@
+#chat_component {
+    justify-content: left;
+    margin-left: 5px;
+}
+
+#chat_board {
+    background-color: antiquewhite;
+    overflow: scroll;
+    height: 300px;
+    width: 500px;
+}
+
+#message_input {
+    width: 500px;
+}
+
+#message_send_button {
+    margin-left: 305px;
+}
+
+#friend_chat_message_id {
+    background-color: #ADFF2F;
+}
+
+#author_chat_message_id {
+    background-color: #6495ED;
+}
+
+#friend_chat_message_id,
+#author_chat_message_id {
+    height: 45px;
+    white-space: pre-wrap;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    padding: 20px;
+}

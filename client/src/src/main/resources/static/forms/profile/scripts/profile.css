@@ -1,0 +1,37 @@
+#profile {
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+input[type='file'] {
+    width: 130px;
+}
+
+#div_friends {
+    background-color: #DDA0DD;
+    width: 250px;
+}
+
+#content {
+    width: 250px;
+    background-color: #CCF;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #FFA;
+}
+
+#board {
+    background-color: antiquewhite;
+    width: 500px;
+}
+
+#musicDialog,
+#videoDialog {
+    margin-left: 300px;
+    margin-top: 150px;
+    width: 500px;
+    height: 300px;
+}

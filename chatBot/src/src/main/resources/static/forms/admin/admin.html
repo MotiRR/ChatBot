@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SberBot</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="scripts/admin.css">
+    <link rel="stylesheet" href="scripts/MessageHolderComponent.css">
+
+    <script src='https://unpkg.com/react@16/umd/react.development.js'></script>
+    <script src='https://unpkg.com/react-dom@16/umd/react-dom.development.js'></script>
+
+    <script src="scripts/AboutComponent.js"></script>
+    <script src="scripts/MessagesHolderComponent.js"></script>
+    <script src="scripts/RestrictionsViewComponent.js"></script>
+    <script src="scripts/UsersDetailsComponent.js"></script>
+    <script src="scripts/UserComponent.js"></script>
+    <script src="scripts/admin.js"></script>
+</head>
+<body onload="onFormLoad()">
+<h1>Администрирование</h1>
+<button id="show_about_form_id" onclick="showAbout()">О программе</button>
+<div id='main_content'></div>
+</body>
+
+</html>

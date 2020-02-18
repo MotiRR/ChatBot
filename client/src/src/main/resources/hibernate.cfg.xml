@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.autocommit">false</property>
+
+        <mapping class="sber.edu.database.dto.UserAccountEntity"/>
+        <mapping class="sber.edu.database.dto.UserEntity"/>
+        <mapping class="sber.edu.database.dto.SessionEntity"/>
+        <mapping class="sber.edu.database.dto.FriendEntity"/>
+        <mapping class="sber.edu.database.dto.GalleryEntity"/>
+    </session-factory>
+</hibernate-configuration>
